@@ -20,20 +20,28 @@
                                 <th class="px-6 py-3 bg-gray-50">
                                     <span class="text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Email</span>
                                 </th>
+                                @auth
+                                    <th class="px-6 py-3 bg-gray-50"></th>
+                                @endauth
                             </tr>
                             </thead>
 
                             <tbody class="bg-white divide-y divide-gray-200 divide-solid">
-                            @foreach($users as $user)
-                                <tr class="bg-white">
-                                    <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
-                                        {{ $user->name }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
-                                        {{ $user->email }}
-                                    </td>
-                                </tr>
-                            @endforeach
+                                @foreach($users as $user)
+                                    <tr class="bg-white">
+                                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
+                                            {{ $user->name }}
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
+                                            {{ $user->email }}
+                                        </td>
+                                        @auth
+                                            <td>
+                                                @livewire('user-follow', ['userId' => $user->id])
+                                            </td>
+                                        @endauth
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
