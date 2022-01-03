@@ -18,6 +18,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+Route::get('followers', [\App\Http\Controllers\UserController::class, 'get_followers'])->name('users.followers');
+Route::get('following', [\App\Http\Controllers\UserController::class, 'get_followings'])->name('users.followings');
 
 Route::middleware('auth')->group(function () {
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');

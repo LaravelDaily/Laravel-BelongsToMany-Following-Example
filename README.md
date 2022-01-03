@@ -1,5 +1,7 @@
 ## Laravel Breeze: Tailwind Pages Skeleton
 
+In this project, any user can follow other users and thus A User will have many followers and followings. Users can also unfollow the following users. Uses Laravel 8 and Livewire 
+
 Laravel boilerplate repository to create simple demo-projects. It allows to quickly add new routes/pages, and has examples of a table page, and a form page.
 
 It uses the Starter Kit [Laravel Breeze](https://github.com/laravel/breeze) based on Tailwind framework.
