@@ -8,6 +8,10 @@ It uses the Starter Kit [Laravel Breeze](https://github.com/laravel/breeze) base
 
 ![Laravel Breeze Table page](https://laraveldaily.com/wp-content/uploads/2021/09/Screenshot-2021-09-19-at-09.51.38.png)
 
+https://raw.githubusercontent.com/amitleuva1987/Laravel-BelongsToMany-Following-Example/main/screenshot1.png
+
+https://raw.githubusercontent.com/amitleuva1987/Laravel-BelongsToMany-Following-Example/main/screenshot2.png
+
 ![Laravel Breeze Form page](https://laraveldaily.com/wp-content/uploads/2021/09/Screenshot-2021-09-19-at-09.51.50.png)
 
 -----
